@@ -85,28 +85,79 @@
 
 // //--------------------------BOUCLE SwitchCase-----------------------------------------
 
-let i = 1;
-let md;
+// let i = 1;
+// let md;
 
-while (i < 200) {
-  switch (true) {
-    case i % 3 == 0 && i % 5 == 0:
-      console.log("coucouHello");
-      i++;
-      break;
+// while (i < 200) {
+//   switch (true) {
+//     case i % 3 == 0 && i % 5 == 0:
+//       console.log("coucouHello");
+//       i++;
+//       break;
 
-    case i % 3 == 0:
-      console.log("coucou");
-      i++;
-      break;
+//     case i % 3 == 0:
+//       console.log("coucou");
+//       i++;
+//       break;
 
-    case i % 5 == 0:
-      console.log("Hello");
-      i++;
-      break;
+//     case i % 5 == 0:
+//       console.log("Hello");
+//       i++;
+//       break;
 
-    default:
-      console.log(i);
-      i++;
-  }
+//     default:
+//       console.log(i);
+//       i++;
+//   }
+// }
+
+//------------------------Null et Undifined ----------------------
+// let maVariableNull = null;
+// let maVariable = 0;
+// let maVariableUdifiened;
+
+// console.log(typeof maVariableNull);
+
+// if (maVariableNull === null) {
+//   console.log("Je suis Null");
+// }
+
+// if (maVariableUdifiened === undefined) {
+//   console.log("Je suis undefined");
+// }
+
+// // if (!mavariable) {}  là il verifie n'est pas null et undefined et 0 et " " à la fois
+
+// if (!maVariableNull) {
+//   console.log("je rentre dans la condition de ma variableNull");
+// }
+
+// if (!maVariable || maVariable === 0) {
+//   console.log("je rentre dans la condition de ma variable");
+// }
+
+// --------------------- Tableau --------------------------
+
+const passagers = ["Didier", "Daniel", "Sophie", "Denise"];
+// --- for of
+
+console.log("---------For of----------");
+for (let passager of passagers) {
+  console.log(passager);
 }
+
+// ---- for in
+
+console.log("--------for in-----------");
+for (let i in passagers) {
+  console.log(passagers[i]);
+}
+
+// //-----For each et map()
+// // for each ne retourne rien mais retourne
+
+// // 
+const [premier, second, lesautres] = passagers;
+console.log("Premier " + premier);
+console.log("Second " + second);
+console.log("les autres " + lesautres);
